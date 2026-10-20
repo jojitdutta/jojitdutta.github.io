@@ -268,6 +268,8 @@ h1 {
 .spec dt { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 0.3rem; }
 .spec dd { margin: 0; min-width: 0; }
 .body > .spec:first-child { margin-top: 0; }
+.spec dd.people span { display: block; }
+.spec dd.people span + span { margin-top: 2px; }
 @media (max-width: 520px) {
   .spec { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .spec dd { margin-bottom: 12px; }
@@ -454,9 +456,10 @@ h1 {
           <h3>Cryogenic propellant storage for space applications</h3>
           <p class="dates">Nov 2022 – May 2026</p>
         </div>
-        <p class="meta">Jadavpur University, with ISRO Liquid Propulsion Systems Centre (LPSC) · Advisor: Prof. Achintya Mukhopadhyay</p>
+        <p class="meta">Jadavpur University, with ISRO Liquid Propulsion Systems Centre (LPSC)</p>
         <p>I developed a lumped-parameter thermodynamic model of liquid hydrogen and liquid oxygen stored in a rigid, double-walled spherical vessel with vacuum multilayer insulation and an in-tank heater. The model follows the fluid's mass, pressure and enthalpy through long periods of dormancy and through duty-cycle discharge, including the heater power needed to stay within pressure limits without venting.</p>
         <dl class="spec">
+          <dt>Advisors</dt><dd class="people"><span>Prof. Koushik Ghosh, Mechanical Engineering</span><span>Prof. Aranyak Chakravarty, School of Nuclear Studies &amp; Application</span><span>Prof. Achintya Mukhopadhyay, Mechanical Engineering</span><span>Prof. Swarnendu Sen, Mechanical Engineering</span></dd>
           <dt>Fluids</dt><dd>Liquid hydrogen and liquid oxygen, across liquid, vapour and supercritical states</dd>
           <dt>Vessel</dt><dd>Double-walled sphere, vacuum multilayer insulation, in-tank heater</dd>
           <dt>Physics</dt><dd>Coupled ODEs for mass, pressure and enthalpy; real-fluid NIST property data; boiling-curve heat-transfer correlations from natural convection to film boiling</dd>
